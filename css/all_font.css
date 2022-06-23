@@ -1,0 +1,85 @@
+@font-face {
+  font-family:'Typo_DabangguB';
+  src: url('../font/Typo_DabangguB.woff') format('woff');  
+}
+@font-face {
+  font-family:'Binggrae';
+  src: url('../font/Binggrae.woff') format('woff');  
+}
+@font-face {
+  font-family:'Binggrae-Bold';
+  src: url('../font/Binggrae-Bold.woff') format('woff');  
+}
+@font-face {
+  font-family: 'HeirofLightBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SDSwaggerTTF';
+  src: url('../font/SDSwaggerTTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JSArirangPPURI';
+  src: url('../font/JSArirangPPURI.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SANGJUHaerye';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUHaerye.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.font1{
+  font-family: 'Typo_DabangguB';
+  /* 타이포 다방구 */
+}
+.font2{
+  font-family: 'Binggrae';
+}
+.font3{
+  font-family: 'Binggrae-Bold';
+}
+.font4{
+  font-family: 'HeirofLightBold';
+}
+.font5{
+  font-family: 'SDSwaggerTTF';
+}
+.font6{
+  font-family: 'JSArirangPPURI';
+}
+.font7{
+  font-family: 'SANGJUHaerye';
+}
+
+.g_font1{}
+.g_font2{}
+.g_font3{}
+.g_font4{}
+.g_font5{}
+.g_font6{}
+.g_font7{}

@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+.Mockup .tablet_mockup {
+  border: 5px solid #666;
+  background-color: #000;
+  width: 935.8px;
+  height: 594.9px;
+  position: relative;
+  border-radius: 30px;
+  /* 아이프레임 */
+  /* 카메라 */
+  /* 전원버튼 */
+}
+
+.Mockup .tablet_mockup::before {
+  content: '';
+  position: absolute;
+  width: 97.5%;
+  height: 98.5%;
+  border-radius: 27px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.Mockup .tablet_mockup .iframe_url {
+  position: absolute;
+  width: 875.8px;
+  height: 544.9px;
+  border-radius: 25px;
+  background-color: #eee;
+  border: 1px solid #333;
+  color: #111;
+  font-size: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mockup .tablet_mockup .iframe_url iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.Mockup .tablet_mockup .camera {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 276.87px;
+  height: 20px;
+  border-radius: 25px 25px 0 0;
+  overflow: hidden;
+}
+
+.Mockup .tablet_mockup .camera span {
+  position: absolute;
+}
+
+.Mockup .tablet_mockup .camera span:nth-child(1) {
+  background-color: #555;
+  width: 10px;
+  height: 10px;
+  border-radius: 7px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+}
+
+.Mockup .tablet_mockup .camera span:nth-child(2) {
+  background-color: #111;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: inset 0 0 10px rgba(69, 25, 190, 0.5);
+  z-index: 30;
+}
+
+.Mockup .tablet_mockup .camera span:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  width: 15px;
+  height: 15px;
+  border-radius: 25px;
+}
+
+.Mockup .tablet_mockup .power {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 935.8px;
+}
+
+.Mockup .tablet_mockup .power span {
+  position: absolute;
+  top: -10px;
+  width: 88px;
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+}
+
+.Mockup .tablet_mockup .power span:nth-child(1) {
+  width: 40px;
+  left: 120px;
+}
+
+.Mockup .tablet_mockup .power span:nth-child(2) {
+  width: 140px;
+  left: 200px;
+}
+
+.Mockup .tablet_mockup .volum span,
+.Mockup .tablet_mockup .power span {
+  background-color: #333;
+}

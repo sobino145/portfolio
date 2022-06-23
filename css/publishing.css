@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* 퍼블리싱 영역 */
+
+
+
+.part4{}
+.part4_in{
+	width: 1200px;
+	margin: 0 auto;
+}
+.pb_container{
+	width: 1200px;
+	height: 750px;
+}
+
+/* 이너 컨텐츠 */
+
+
+
+#uiux{background:#eee}
+
+.w_bg{/* 왼쪽 배경이미지 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 700px;
+  height: 100%;
+  overflow: hidden;
+}
+.w_bg ul{
+  width: 7000px;/* 슬라이드 총길이 (700*10=7000) */
+  height: inherit;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.w_bg ul li{
+  float: left;
+  width: 700px;
+  height: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;/* 영역에 꽉차게 */
+  opacity: 0.8;
+}
+.w_bg ul li:nth-child(1){background-image: url(../image/p_bg_01.png);}
+.w_bg ul li:nth-child(2){background-image: url(../image/p_bg_02.png);}
+.w_bg ul li:nth-child(3){background-image: url(../image/p_bg_03.png);}
+
+
+
+/* 텍스트와 디자인화면 전체영역 */
+.webd_in{
+  position: absolute;
+  top: 0;
+  left: 320px;
+  width: 800px;
+  height: 100%;
+  display: table;
+  /* background-color: pink; */
+}
+/* 제목&제목바 영역 */
+.w_txt{
+  width: 300px;
+  height: 500px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.w_title{
+  width: 500px;
+  height: 150px;
+}
+.w_title h2{
+  float: left;
+  font-family: 'SDSwaggerTTF', sans-serif;
+  font-size: 70px;
+  font-weight: normal;
+  letter-spacing: -5px;
+  color: #fff;
+  line-height: 130px;
+  text-shadow: -7px 10px 4px rgba(0,0,0,0.3);
+}
+.w_title p{
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: 10px;
+  padding-top: 45px;
+  text-shadow: -7px 10px 4px rgba(0,0,0,0.3);
+}
+.w_title p strong{
+  font-family: 'Exo', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  text-indent: 10px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* 왼쪽 흰색선 */
+.w_title .bar{
+  clear: both;
+  display: block;
+  width: 1000px;
+  height: 1.5px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: -10px 10px 4px rgba(0,0,0,0.3);
+}
+/* 오른족 회색선 */
+.w_title .bar span{
+  width: 620px;
+  height: 1.5px;
+  background-color: #4d4c4a;
+  position: absolute;
+  right: 0;
+}
+
+
+/* _____________01~10 숫자 */
+.w_slide_btn{
+  position: relative;
+  height: 40px;
+  padding-top: 5px;
+}
+.w_slide_btn i{
+  float: left;
+  width: 30px;
+  height: 20px;
+  font-size: 40px;
+  margin-left: -8px;
+  line-height: 25px;
+  color: #fff;
+  text-shadow: -7px 10px 4px rgba(0,0,0,0.3);
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.w_slide_btn i.active{opacity: 1;}/* JQuery에서 불러냄 */
+
+.w_list{
+  width: 350px;
+  height: 40px;
+  position: absolute;
+  left: 20px;
+}
+
+.w_list li{
+  float: left;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0 5px;
+  color: #999;
+  cursor: pointer;
+}
+.w_list li.btn_active{
+  color: #fff;
+  text-shadow: -7px 10px 4px rgba(0,0,0,0.3),
+                0 0 10px #cff;
+}
+
+/* _________설명 텍스트 영역 */
+.w_txt_slide{
+  width: 350px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  /* background: green; */
+}
+.w_txt_slide ul{
+  width: 3400px;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.w_txt_slide ul li{
+  float: left;
+  width: 330px;
+  height: 300px;
+  padding-left: 10px;
+  color: #fff;
+  background: #1f1e1d;
+}
+.ptitle{
+  font-size: 28px;
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(245, 241, 241);
+}
+.ptext{
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  color: #cff;
+}
+/* Detail 버튼 */
+.w_txt_slide ul li span{
+  display: inline-block;
+  width: 150px;
+  height: 28px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  background-color: #fff;
+  color: #635181;
+  margin-top: 15px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.w_txt_slide ul li span:hover{
+  background-color: #635181;
+  color: #fff;
+  font-weight: normal;
+}
+.w_txt_slide ul li button{
+  width: 150px;
+  height: 28px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 15px;
+  margin-right: 15px;
+  border: none;
+  border-radius: 3px;
+  float: left;
+}
+.w_txt_slide ul li:nth-child(2) span{color: #086896;}
+.w_txt_slide ul li:nth-child(2) span:hover{background-color: #086896;color: #fff;}
+.w_txt_slide ul li:nth-child(3) span{color: #635181;}
+.w_txt_slide ul li:nth-child(3) span:hover{background-color: #635181;color: #fff;}
+
+/* ________________________오른쪽 화면 디자인 영역 */
+
+.w_tab{
+  position: relative;
+  width: 917px;
+  height: 675px;
+  top: 130px;
+}
+/* 테블릿 */
+.w_tablet{
+  position: relative;
+  width: 917px;
+  height: 675px;
+  z-index: 100;
+  background: url(../image/tab.png);
+}
+/* 테블릿 그림자 */
+.w_shadow{
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  width: 850px;
+  height: 600px;
+  border-radius: 50px;
+  box-shadow: 20px 30px 20px rgba(0,0,0,0.3);
+  z-index: 0;
+}
+/* 보여지는 영역 */
+.w_tab_slide{
+  width: 794px;
+  height: 555px;
+  position: absolute;
+  top: 57px;
+  left: 48px;
+  z-index: 200;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.w_tab_slide ul{
+  width: 7940px;
+  height: auto;
+  z-index: 200;
+  position: relative;
+}
+.w_tab_slide ul li{
+  float: left;
+  width: 794px;
+  height: 553px;
+  transition: background-position 1s;
+  background-position: 0 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.w_tab_slide ul li:nth-child(1){background-image: url(../image/win_img_01.jpg);}
+.w_tab_slide ul li:nth-child(2){background-image: url(../image/win_img_02.jpg);}
+.w_tab_slide ul li:nth-child(3){background-image: url(../image/win_img_03.jpg);}
+/* __________모달창 영역 */
+#w_popup{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: auto;
+}
+.w_pop_body{
+  position: relative;
+  height: 100%;
+  margin: 0 auto;
+  width: 1400px;
+  background-color: #fff;
+  z-index: 1000;
+}
+/* 메뉴 뒤에 나오는 검정 배경 */
+.w_back{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.w_pop>li{
+  width: 1400px;
+  position: absolute;
+  text-align: center;
+  cursor: default;
+  background: #fff;
+  display: none;
+}
+.w_pop>li p{
+  text-align:center;
+  font-size:30px;
+}
+
+/*버튼영역*/
+.w_btn{
+  position:fixed;
+  left:50%;
+  top:0;
+  margin-left:710px;
+  width:80px;
+  height:150px;
+  color:#fff;
+  text-align:center;
+  overflow:hidden;
+  z-index:10000;
+}
+.w_btn>li{
+  cursor: pointer;
+  overflow: hidden;
+}
+.w_btn .w_btn_close{ /*닫기버튼*/
+  height:70px;
+  width:80px;
+  cursor:pointer;
+  border-bottom:1px solid #fff;
+}
+.w_btn .w_btn_close i{ /*아이콘폰트*/
+  position:relative;
+  top:15px;
+  font-size:40px;
+}
+.w_btn .w_left_btn, .w_btn .w_right_btn{float:left;}
+.w_btn .w_left_btn i, .w_btn .w_right_btn i{
+  position:relative;
+  top:10px;
+  font-size:30px;
+  width:40px;
+  height:50px;
+}
+.w_btn .w_page{ 
+  font-size:12px;
+  color:#fff;
+  width:80px;
+  padding-top:10px;
+  height:50px;
+  text-align:center;
+  border-top:1px solid #fff;
+}
