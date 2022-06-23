@@ -94,6 +94,17 @@ $(document).ready(function () {
 
   });
 
+  //모바일 영역 슬라이드 플러그인
+  var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false
+});
 
 
 });

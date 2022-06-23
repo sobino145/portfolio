@@ -1,6 +1,7 @@
 @import url(../css/common.css);
 @import url(../css/all_font.css);
 @import url(../css/publishing.css);
+@import url(../css/mobile_part.css);
 @import url(../css/mobile_mockup.css);
 @import url(../css/tablet_mockup.css);
 
@@ -612,87 +613,6 @@ section h2{
 
 
 
-/* ///////////////////////////////////////////////////////모바일 영역 */
-.part5_in{
-	width:1200px;
-	margin: 0 auto;
-}
-
-.mobile_con{
-	width: 1100px;
-}
-.work_deco{
-	width: 500px;
-	display: flex;
-	flex-direction: row;
-	text-align: center;
-	justify-content: baseline;
-}
-.work_deco ul{ 
-	width: 220px;
-  margin-bottom: 50px;
-}
-.work_deco ul li{
-	margin: 20px 0 0;
-	font-size: 21px;
-	color:#dfdddd;
-}
-/* 모바일 타블렛 뷰어*/
-
-
-.btn3{
-  font-size: 18px;
-  width: 150px;
-  padding: 7px;
-  background-color: #fff;
-  outline: none;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: 0.35s;
-}
-.pc1:hover, .pc2:hover, .pc3:hover{
-  background-color: royalblue;
-  color: #fff;
-  border-color:transparent;
-} 
-.tablet1:hover, .tablet2:hover, .tablet3:hover{
-  background-color: green;
-  color: #fff;
-  border-color:transparent;
-}
-.mobile1:hover, .mobile2:hover, .mobile3:hover{
-  background-color: crimson;
-  color: #fff;
-  border-color:transparent;
-}
-
-/* POPUP BOX */
-.pop3{
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 999999;
-  overflow: auto;
-}
-
-.c3{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-iframe{border: none;}
-
-.part5 .close{
-	position: absolute;
-	left: 50%;
-	bottom: 5%;
-	transform: translateX(-50%);
-}
 
 
 
