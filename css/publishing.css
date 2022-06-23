@@ -98,7 +98,7 @@
 }
 .w_title p strong{
   font-family: 'Exo', sans-serif;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 700;
   text-indent: 10px;
   color: #fff;
@@ -172,10 +172,9 @@
   height: 300px;
   position: relative;
   overflow: hidden;
-  /* background: green; */
 }
 .w_txt_slide ul{
-  width: 3400px;
+  width: 1020px;
   height: inherit;
   position: absolute;
   top: 0;
@@ -275,7 +274,7 @@
   border-radius: 15px;
 }
 .w_tab_slide ul{
-  width: 7940px;
+  width: 2382px;
   height: auto;
   z-index: 200;
   position: relative;
@@ -290,9 +289,9 @@
   background-repeat: no-repeat;
 }
 
-.w_tab_slide ul li:nth-child(1){background-image: url(../image/win_img_01.jpg);}
-.w_tab_slide ul li:nth-child(2){background-image: url(../image/win_img_02.jpg);}
-.w_tab_slide ul li:nth-child(3){background-image: url(../image/win_img_03.jpg);}
+.w_tab_slide ul li:nth-child(1){background-image: url(../image/publishing_img1.png);}
+.w_tab_slide ul li:nth-child(2){background-image: url(../image/publishing_img2.png);}
+.w_tab_slide ul li:nth-child(3){background-image: url(../image/publishing_img3.png);}
 /* __________모달창 영역 */
 #w_popup{
   display: none;
