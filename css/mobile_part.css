@@ -8,6 +8,7 @@
 
 .part5_in h3{
   margin: 40px 0;
+  text-shadow: 0 0 10px #dfdddd;
 }
 
 .mobile_con{
@@ -38,7 +39,11 @@
   border-top: 1px dotted #dfdddd;
 }
 .work_deco ul li:first-child{border-top:none;}
+.work_deco ul:nth-child(2){
+  width: 280px;
+}
 .work_deco ul:nth-child(2) li{
+  width: 280px;
   font-size: 13px;
   color: #888;
   border-left: 1px dotted #dfdddd;
@@ -71,7 +76,7 @@
   width: 150px;
   padding: 7px;
   margin-top: 50px;
-  margin-right: 80px;
+  margin-right: 10px;
   background-color: #fff;
   outline: none;
   cursor: pointer;
