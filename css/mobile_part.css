@@ -53,9 +53,9 @@
 .content_mobox{
   width: 250px;
   height: 540px;
-  border-radius: 30px;
+  border-radius: 20px;
   overflow: hidden;
-  background-color: aquamarine;
+  background-color: gray;
   float: right;
   position: absolute;
   top:5%;
