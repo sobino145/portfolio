@@ -221,4 +221,7 @@ new TypeIt("#typing2", {
     $(".pop3").hide();
     return false;
   });
+
+
+  
 });

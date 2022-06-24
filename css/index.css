@@ -611,8 +611,13 @@ section h2{
 }
 .m_btn:hover .g_page2{color:#d5d5d5;}
 
-
-
+/* ///////////////////////////////// 반응형 */
+.part6_inner{
+	width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #3914a0;
+}
 
 
 

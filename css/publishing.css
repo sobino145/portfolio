@@ -124,7 +124,7 @@
 }
 
 
-/* _____________01~10 숫자 */
+/* _____________숫자 */
 .w_slide_btn{
   position: relative;
   height: 40px;
@@ -212,28 +212,53 @@
   margin-top: 15px;
   border-radius: 3px;
   cursor: pointer;
+  transition: 0.3s;
 }
 .w_txt_slide ul li span:hover{
   background-color: #635181;
   color: #fff;
   font-weight: normal;
 }
-.w_txt_slide ul li button{
+.w_txt_slide ul li .btn{
   width: 150px;
   height: 28px;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   line-height: 28px;
+  text-align: center;
   margin-top: 15px;
   margin-right: 15px;
-  border: none;
+  background-color: #eee;
+  color: #1f1e1d;
   border-radius: 3px;
+  cursor: pointer;
   float: left;
+  transition: 0.3s;
 }
-.w_txt_slide ul li:nth-child(2) span{color: #086896;}
-.w_txt_slide ul li:nth-child(2) span:hover{background-color: #086896;color: #fff;}
-.w_txt_slide ul li:nth-child(3) span{color: #635181;}
-.w_txt_slide ul li:nth-child(3) span:hover{background-color: #635181;color: #fff;}
+.w_txt_slide ul li .btn:hover{
+  background-color: #582e16;
+  color: #eee;
+}
+
+.w_txt_slide ul li:nth-child(2) .btn:hover{
+  background-color: #3d1b06;
+  color: #eee;
+}
+
+.w_txt_slide ul li:nth-child(3) .btn:hover{
+  background-color: #e6d11c;
+  color: #000;
+}
+
+.w_txt_slide ul li:nth-child(2) span:hover{
+  background-color: #3d1b06;
+  color: #eee;
+}
+
+.w_txt_slide ul li:nth-child(3) span:hover{
+  background-color: #e6d11c;
+  color: #000;
+}
 
 /* ________________________오른쪽 화면 디자인 영역 */
 
