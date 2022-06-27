@@ -223,5 +223,6 @@ new TypeIt("#typing2", {
   });
 
 
-  
+
+
 });
