@@ -4,8 +4,10 @@
 @import url(../css/publishing.css);
 @import url(../css/mobile_part.css);
 @import url(../css/responsive_web.css);
+@import url(../css/plan_part.css);
 @import url(../css/mobile_mockup.css);
 @import url(../css/tablet_mockup.css);
+@import url(../css/pc_mockup.css);
 
 /* 전체 조율 영역 */
 
