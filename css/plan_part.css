@@ -2,3 +2,37 @@
   width: 1200px;
   margin: 0 auto;
 }
+.plan_container{
+  width: 90%;
+  height: 90%;
+  background: skyblue;
+}
+
+.plan_container .plan_Ttxt{
+  display: flex;
+  flex-direction: row;
+} 
+
+.plan_container .plan_Ttxt li{
+  flex: 1;
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  border-bottom: 1px solid #000;
+}
+.AML_line{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.AML_line>li{
+  flex: 1;
+  text-align: center;
+}
+
+.ditaile_list{
+  display: flex;
+  flex-direction: column;
+}
