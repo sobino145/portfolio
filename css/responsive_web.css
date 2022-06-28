@@ -5,7 +5,7 @@
 	margin: 0 auto;
 	background-color: #3914a0;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
 .part6_inner h2{width: 100%;}
@@ -54,11 +54,20 @@
 
 
 .con_po{
-	width:700px;
+	width:500px;
+  height: 500px;
+  background-color: #f0f0f0;
+  position: relative;
 }
-.PC_veiw{}
-.TableT_veiw{}
-.MobilE_veiw{}
+.PC_veiw{
+  width: 300px;
+}
+.TableT_veiw{
+  width: 200px;
+}
+.MobilE_veiw{
+  width: 100px;
+}
 
 
 
