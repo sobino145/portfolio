@@ -45,10 +45,12 @@
   color: #fff;
   font-size: 38px;
 }
+
 .picture:hover p{
   opacity: 0;
 }
-.picture_personal .picture>img{width: 100%;}
+.img_box_p{width:380;height: 327px;}
+.picture_personal .picture .img_box_p>img{width: 100%;height: 100%;}
 
 .picture_personal .white_box{
 	width: 380px;
