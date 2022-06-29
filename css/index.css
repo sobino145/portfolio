@@ -148,7 +148,10 @@ section h2{
 	text-transform: uppercase;
 }
 #p1{background:#f0f0f0;}
-#p2{background:#d8d8da;}	
+#p2{
+	background:url(../image/profile_bg.jpg) no-repeat center;
+	background-size: cover;
+}	
 #p3{background: url(../image/design_bg.jpg) no-repeat center;}
 #p4{background:#f0f0f0;}
 #p5{

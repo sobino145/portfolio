@@ -68,12 +68,6 @@ new TypeIt("#typing2", {
       e.preventDefault(); 
     });
 
-  /* 프로필 개인 이미지 변경 */
-  $(".picture_personal ul li").click(function(){
-    
-    $(".picture_personal ul li:nth-child(2)").fadeIn("fast");
-  });
-
 
   //디자인 영역
 
@@ -88,7 +82,6 @@ new TypeIt("#typing2", {
     $(".panel>li").hide();//기존의 보여진 내용 숨기기
     $($(this).find("a").attr("href")).show();//새로 선택된 내룔 href 연결된 내용 보여주기 
   });
-///////////////////////////////////프로필//////////////////////////////////////////////
 
 
 

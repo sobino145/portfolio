@@ -7,7 +7,7 @@
 	margin: 0 auto;
 }
 .part2 h3{
-	font-size: 21px;
+	font-size: 25px;
 	font-family: 'SDSwaggerTTF', sans-serif;
 	font-weight: 100;
 	color: #333;
@@ -35,21 +35,86 @@
 
 .picture_personal .picture{
 	width: 380px;
+  position: relative;
+}
+.picture p{
+  width: 100%;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 38px;
+}
+.picture:hover p{
+  opacity: 0;
 }
 .picture_personal .picture>img{width: 100%;}
 
 .picture_personal .white_box{
 	width: 380px;
-	height: 250px;
+	height: 260px;
 	background-color: #fff;
-	position: absolute;
 	bottom: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+.white_box>.WB_title{
+  width: 380px;
+  height: 45px;
+}
+.white_box>.WB_title>h3{
+  font-size: 38px;
+  display: inline-block;
+}
+.white_box>ul{
+  width: 160px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.white_box>ul>li{
+  flex: 1;
+  height: 30px;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.white_box>.contect_box{
+  width: 380px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.white_box>.contect_box>h4{
+  width: 380px;
+  font-size: 24px;
+  display: block;
+}
+.contect_box>ul{
+  width: 160px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.contect_box>ul>li{
+  height: 20px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
 
 .person_profile{
 	grid-column: 2/4;
 	width:800px;
 	height: 280px;
+  background-color: #FFFBDB;
 	border: 3px solid #333;
 }
 
@@ -60,6 +125,7 @@
 	width:800px;
 	height: 350px;
 	border: 3px solid #333;
+  background: #4B5771;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
