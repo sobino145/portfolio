@@ -37,36 +37,48 @@
   flex-direction: column;
 }
 
-/* 갤러리 영역 */
+/* 갤러리 */
 #gallery{ 
-	width:810px;
+	width:1000px;
+	height:550px;
 	margin:50px auto 0; 
-	padding:20px; 
+	padding:20px 20px 20px 80px; 
 	border:solid 1px #ccc;
 	background:#eee;
 	box-shadow:0 0 30px #333;
 	position:relative;
+	overflow:hidden; /*부모영역넘어간 자식숨김*/
+  overflow-y: scroll;
 }
 #largeImg{
-	border:solid 1px #ccc;
-	width:800px;
-	height:450px;
-	padding:5px;
-}
-#largeImg img{ /*모든 이미지 동일한 위치에 겹친후 안보이게 함*/
-	display:none;
 	position:absolute;
-	top:25px;
-	left:25px;
+	width:4080px;  /*전체총길이(가로폭1000px*4+오른쪽여백20px*4)*/
+  overflow-y: scroll;
 }
-#largeImg img:first-child{display:inline;}/*첫번째 이미지는 보이게함*/
+#largeImg img{ 
+  width: 1000px;height: auto;
+	float:left;
+	/*img태그는 inline방식이므로 float를 사용하지 않아도 가로배열을 할수 있으나
+	inline방식의 태그 입력시 엔터를 치는 경우 불필요한 공백이 발생하여 가로배열이 되지않음.
+	->해결:float를 사용;
+	*/
+	margin-right:20px;
+}
 
-.thumbs{}
-.thumbs img{
-	border:solid 1px #ccc;
-	padding:5px;
-	margin:10px 0;
-	width:90px;
-	height:80px;
+.thumbs{
+	position:absolute;
+	left:20px;top:20px;
+  display: flex;
+  flex-direction: column;
 }
-.thumbs img:hover{border-color:#ef4018;}
+.thumbs a{ /* 버튼 */
+	display:inline-block;
+	padding:5px 10px;
+	border:dotted 1px #888;
+	background:#ccc;
+	color:#666;
+}
+.thumbs a:hover{   /* 버튼오버 */
+	background:#333;
+	color:#fff;
+}
