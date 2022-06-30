@@ -36,3 +36,37 @@
   display: flex;
   flex-direction: column;
 }
+
+/* 갤러리 영역 */
+#gallery{ 
+	width:810px;
+	margin:50px auto 0; 
+	padding:20px; 
+	border:solid 1px #ccc;
+	background:#eee;
+	box-shadow:0 0 30px #333;
+	position:relative;
+}
+#largeImg{
+	border:solid 1px #ccc;
+	width:800px;
+	height:450px;
+	padding:5px;
+}
+#largeImg img{ /*모든 이미지 동일한 위치에 겹친후 안보이게 함*/
+	display:none;
+	position:absolute;
+	top:25px;
+	left:25px;
+}
+#largeImg img:first-child{display:inline;}/*첫번째 이미지는 보이게함*/
+
+.thumbs{}
+.thumbs img{
+	border:solid 1px #ccc;
+	padding:5px;
+	margin:10px 0;
+	width:90px;
+	height:80px;
+}
+.thumbs img:hover{border-color:#ef4018;}

@@ -147,7 +147,10 @@ section h2{
 	text-align: left;
 	text-transform: uppercase;
 }
-#p1{background:#f0f0f0;}
+#p1{
+	background:url(../image/main_bg.jpg) no-repeat center;
+	background-size: cover;
+}
 #p2{
 	background:url(../image/profile_bg.jpg) no-repeat center;
 	background-size: cover;
@@ -174,7 +177,7 @@ section h2{
 #m0{
   width:100%;
   height:80%;
-  background:#f3f1f1;
+  /* background:#f3f1f1; */
 	display: flex;
 	justify-content: center;
 	justify-content: space-around;
@@ -214,45 +217,6 @@ section h2{
 	width: 100%;
 	transition: all 1s;
 }
-
-/* 아래로 화살표  */
-.visual_line{
-	width: 50px;
-	height: 320px;
-	/* background-color: #00cccc; */
-	position: absolute;
-	left: 30px;
-	bottom: 0;
-}
-@keyframes arrow_D{
-	0%{top:0}
-	100%{top:310px;opacity: 0;}
-}
-@keyframes arrow_D2{
-	0%{top:20px}
-	100%{top:310px;opacity: 0;}
-}
-.slide_point{
-	width:20px;
-	height:320px;
-	border: 1px solid #000;
-	margin: 70px auto;
-	border-radius: 10px;
-	position: relative;
-}
-.arrow_down, .arrow_down2{
-	position: absolute;
-	top: 0;
-	left: 0px;
-	font-size: 20px;
-	transition: all 0.5s;
-	animation: arrow_D 2s ease-in-out infinite;
-}
-.arrow_down2{
-	top: 10px;
-	animation: arrow_D2 2s ease-in-out infinite;
-}
-
 
 
 
