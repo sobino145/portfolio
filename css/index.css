@@ -174,7 +174,49 @@ section h2{
 	color:#fff
 }
 
-/* 비주얼 영역 */
+/*////// 비주얼 영역 */
+.part1{
+	display: grid;
+  align-items: center;
+  justify-items: center;
+  margin: 0;
+}
+/* 텍스트 백그라운 이펙트 */
+@keyframes pulsate {
+  50% {
+    box-shadow:
+      0 0 20px #fff,
+      20px 0 80px #f0f,
+      -20px 0 80px #0ff,
+      inset 0 0 50px #fff,
+      inset -50px 0 80px #f0f,
+      inset 50px 0 80px #0ff,
+      inset -50px 0 300px #f0f,
+      inset 50px 0 300px #0ff;
+  }
+}
+
+.text_BG{
+	width: 600px;
+  height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  border-radius: 50%;
+  box-shadow:
+    0 0 20px #fff,
+    -20px 0 80px #f0f,
+    20px 0 80px #0ff,
+    inset 0 0 50px #fff,
+    inset 50px 0 80px #f0f,
+    inset -50px 0 80px #0ff,
+    inset 50px 0 300px #f0f,
+    inset -50px 0 300px #0ff;
+  animation: pulsate 6s linear infinite;
+}
+
+
+/* 타이핑 텍스트 */
 #m0{
   width:100%;
   height:80%;
@@ -190,7 +232,7 @@ section h2{
 #m0 h2{
 	font-family: 'SDSwaggerTTF', sans-serif;
   /* font-family: 'Nanum Gothic', sans-serif; */
-  font-size:48px;
+  font-size:62px;
   font-weight:500;
   color:#333;
   padding-top:5%;
@@ -203,21 +245,6 @@ section h2{
 	align-items:flex-start;
 }
 
-/* 로고 목업1 영역 */
-.visual_image{
-	width: 700px;
-	height: 520px;
-	overflow: hidden;
-	border-radius: 50px;
-	
-}
-.visual_image:hover a img{
-	transform: scale(1.3);
-}
-.visual_image>a>img{
-	width: 100%;
-	transition: all 1s;
-}
 
 
 
