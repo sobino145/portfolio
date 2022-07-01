@@ -135,7 +135,7 @@ section{
 	position:relative;
 	width:100%;	
 	margin:0 auto;
-	padding-top:150px; /*position:fixed 로 헤더 높이만큼~*/
+	padding-top:150px; 
 	height:800px;
 }
 section h2{
@@ -152,8 +152,8 @@ section h2{
 	background-size: cover;
 }
 #p2{
-	background:url(../image/profile_bg.jpg) no-repeat center;
-	background-size: cover;
+	/* background:url(../image/profile_bg.jpg) no-repeat center;
+	background-size: cover; */
 }	
 #p3{background: url(../image/design_bg.jpg) no-repeat center;}
 #p4{background:#f0f0f0;}
