@@ -58,10 +58,6 @@ new TypeIt("#typing2", {
       e.preventDefault(); 
     });
 
-    $(".visual_image a").click(function (e) {
-      $.scrollTo(this.hash || 0, 500);
-      e.preventDefault(); 
-    });
 
 
   //디자인 영역
