@@ -245,7 +245,7 @@ let gidx=0; //선택되는 이미지
     $(".Plan_left_btn").click(function(){
       gidx--;
       if(gidx<0){ //선택한 이미지가 0일때 다시 맨뒤부터 다시 시작
-        gidx=9;
+        gidx=4;
       }
       galleryImg(gidx);
     });
@@ -254,7 +254,7 @@ let gidx=0; //선택되는 이미지
     //다음버튼 클릭시.....
     $(".Plan_right_btn").click(function(){
       gidx++;
-      if(gidx>9){ //선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
+      if(gidx>4){ //선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
         gidx=0;
       }
       galleryImg(gidx);

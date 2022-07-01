@@ -21,8 +21,8 @@ $(document).ready(function(){
     //취미영역 오버시 오른쪽영역 이미지 바뀜
     $(".pp_ED ul li").mouseenter(function(){
       let profile = $(this).index();
-      $(".profile_video ul li").stop().fadeOut();
-      $(".profile_video ul li").eq(profile).stop().fadeIn();
+      $(".pp_HB ul li").stop().fadeOut();
+      $(".pp_HB ul li").eq(profile).stop().fadeIn();
     });
   
 
