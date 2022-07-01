@@ -161,7 +161,8 @@ section h2{
 	background: url(../image/mobile_bg.jpg.png) no-repeat center;
 	background-size: cover;}
 #p6{
-	background:url(../image/pos_bg.png) no-repeat;
+	/* background:url(../image/pos_bg.png) no-repeat; */
+  background-color: #666;
 	background-size: cover;
 }
 #p7{
