@@ -44,8 +44,7 @@
 }
 .thumbs{
 	position:absolute;
-	top:30px;	
-	left:80px;	
+	top:0px;	left:80px;	
 }
 .thumbs li{
 	float:left;
@@ -83,4 +82,12 @@
 	font-family: 'SANGJUHaerye';
 	color:#111;
 	font-size:25px;
+}
+
+/* 이미지 라인 안의 페이지 이동 버튼 */
+
+.btn_space{
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }

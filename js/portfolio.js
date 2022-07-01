@@ -241,7 +241,7 @@ let gidx=0; //선택되는 이미지
     $(".Plan_left_btn").click(function(){
       gidx--;
       if(gidx<0){ //선택한 이미지가 0일때 다시 맨뒤부터 다시 시작
-        gidx=4;
+        gidx=6;
       }
       galleryImg(gidx);
     });
@@ -250,15 +250,31 @@ let gidx=0; //선택되는 이미지
     //다음버튼 클릭시.....
     $(".Plan_right_btn").click(function(){
       gidx++;
-      if(gidx>4){ //선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
+      if(gidx>6){ //선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
         gidx=0;
       }
       galleryImg(gidx);
     });
 
 
+//기획 웹 목업 연결
+$(".btn_space button").click(function(){//각 메뉴를 클릭했을때
+  $(this).next().show(); //다음 형제인 .pop을 보이게함
+  $("html").css({overflowY:"hidden"});//body스크롤없앰
+  return false;
+});
 
+$(".close9").click(function(){//close눌렀을때
+  $(".pop9").hide(); //.pop을 안보이게함
+  $("html").css({"overflow-y":"scroll"});//body스크롤생김   
+});
 
+/*검정 배경 클릭시 닫기*/
+$(".pop9").click(function(){
+  $("html").css({"overflow-y":"scroll"});
+  $(".pop9").hide();
+  return false;
+});
 
 
 
