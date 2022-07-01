@@ -214,15 +214,51 @@ new TypeIt("#typing2", {
     return false;
   });
 
-/* 기획영역 */
-$(".thumbs a").click(function(){
-  let val=$(this).index();
-  let num=-1020*val+20;//이미지의 가로폭+여백20px=1020씩 누적
-  $("#gallery #largeImg").animate({"left":num});
-  return false;
-});
+/*//////// 기획영역 */
+/* 바깥 틀 갤러리  */
+let goldidx=0; //기존 이미지 
+let gidx=0; //선택되는 이미지 
 
+  function galleryImg(gidx){//gidx는 선택되는 이미지
+    
+    if (goldidx!=gidx){//기존의 이미지와 선택된 이미지가 다를때..
+      
+      $(".thumbs li").eq(goldidx).css({"opacity":0.3});//기존썸네일 흐리게
+      $(".thumbs li").eq(gidx).css({"opacity":1});//선택된 썸네일 선명하게
+      $(".largeImg li").eq(goldidx).stop().fadeOut(300);//기존이미지 사라짐
+      $(".largeImg li").eq(gidx).stop().fadeIn(300);//선택된 이미지 나타남 
+      $(".imgText li").eq(goldidx).stop(true,true).fadeOut(300);//기존 텍스트 사라짐
+      $(".imgText li").eq(gidx).stop(true,true).fadeIn(300);//선택된 텍스트 나타남 
 
+    }
+    goldidx=gidx;//선택된 이미지는 기존 이미지로 저장 
+
+  }
+
+  //섬네일 클릭할 시.......
+  $(".thumbs li").click(function(){
+    gidx=$(this).index();
+    galleryImg(gidx);
+  });
+
+    //이전버튼 클릭시.....
+    $(".Plan_left_btn").click(function(){
+      gidx--;
+      if(gidx<0){ //선택한 이미지가 0일때 다시 맨뒤부터 다시 시작
+        gidx=9;
+      }
+      galleryImg(gidx);
+    });
+  
+  
+    //다음버튼 클릭시.....
+    $(".Plan_right_btn").click(function(){
+      gidx++;
+      if(gidx>9){ //선택한 이미지가 마지막일때 다시 맨처음부터 다시 시작
+        gidx=0;
+      }
+      galleryImg(gidx);
+    });
 
 
 

@@ -4,49 +4,82 @@
 }
 .plan_container{
   width: 1200px;
-  height: 90%;
-  background: skyblue;
+  height: 700px;
+	padding-top: 30px;
+	border-radius: 30px 30px 0 0;
+  background: #000;
 	position: relative;
+	box-shadow: 3px 0px 10px #777;
 }
 
 /* 갤러리 */
 #gallery{ 
-	width:1000px;
-	height:550px;
-	margin-left:150px; 
-	padding:20px; 
-	border:solid 1px #ccc;
-	background:#eee;
-	box-shadow:0 0 30px #333;
+	width:1100px;
+	height:700px;
+	margin: 0 auto;
+	background:#fff;
 	position:relative;
-	overflow:hidden; /*부모영역넘어간 자식숨김*/
-  overflow-y: scroll;
-}
-#largeImg{
-	position:absolute;
-	width:4080px;  /*전체총길이(가로폭1000px*4+오른쪽여백20px*4)*/
-}
-#largeImg img{ 
-  width: 1000px;height: auto;
-	float:left;
-	margin-right:20px;
 }
 
+.largeImg li{
+	width:1000px;height: 680px;
+	display:none;
+	position:absolute;
+	top:21px;left:50px;
+	overflow-y: scroll;
+}
+.largeImg li:first-child{display:block;}
+.largeImg li img{
+	width: 100%;height: auto;
+}
+.largeImg li::-webkit-scrollbar{
+  width: 7px;
+}
+.largeImg li::-webkit-scrollbar-thumb{
+  background-color: #000;
+  border-radius: 5px;
+}
+.largeImg li::-webkit-scrollbar-track{
+  background-color: #0e7bbc;
+}
 .thumbs{
 	position:absolute;
-	left:20px;top:20px;
-  display: flex;
-  flex-direction: column;
+	top:30px;	
+	left:80px;	
 }
-.thumbs a{ /* 버튼 */
-	display:inline-block;
-	padding:5px 10px;
-	border:dotted 1px #888;
-	background:#ccc;
-	text-align: center;
-	color:#666;
+.thumbs li{
+	float:left;
+	margin-right:10px;
+	opacity:0.3;
 }
-.thumbs a:hover{   /* 버튼오버 */
-	background:#333;
-	color:#fff;
+
+.thumbs li:first-child{opacity:1;}
+.thumbs li a img{
+	width:75px;
+	height:57px;
+}
+
+.Plan_left_btn{
+	position:absolute;
+	left:0;
+	top:340px;
+}
+.Plan_right_btn{
+	position:absolute;
+	right:0;
+	top:340px;
+}
+
+/*이미지별 텍스트*/
+
+.imgText li{
+	display:none;
+	position:absolute;
+	bottom:50px;right:50px;
+}
+.imgText li:first-child{display:block;}
+
+.imgText li strong{
+	color:#111;
+	font-size:35px;
 }
