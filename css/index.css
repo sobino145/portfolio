@@ -165,7 +165,8 @@ section h2{
 	background-size: cover;
 }
 #p7{
-	background:#1e1f1e;
+	background:url(../image/plan_part_bg.jpg) no-repeat;
+	background-size: cover;
 	color: #f0f0f0;
 }
 #p8{
