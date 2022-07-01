@@ -14,6 +14,7 @@
 	width: 1200px;
 	margin: 0 auto;
 }
+.part4_in>h3{font-family: 'SUIT-Bold';}
 .pb_container{
 	width: 1200px;
 	height: 750px;
@@ -76,8 +77,8 @@
 }
 .w_title h2{
   float: left;
-  font-family: 'SDSwaggerTTF', sans-serif;
-  font-size: 70px;
+  font-family: 'SUIT-Bold', sans-serif;
+  font-size: 51px;
   font-weight: normal;
   letter-spacing: -5px;
   color: #fff;
@@ -86,22 +87,18 @@
 }
 .w_title p{
   float: left;
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  font-weight: normal;
-  color: #fff;
-  text-transform: uppercase;
-  margin-left: 10px;
-  padding-top: 45px;
-  text-shadow: -7px 10px 4px rgba(0,0,0,0.3);
-}
-.w_title p strong{
-  font-family: 'Exo', sans-serif;
-  font-size: 24px;
+  font-family: 'SUIT-Bold', sans-serif;
+  font-size: 21px;
   font-weight: 700;
   text-indent: 10px;
   color: #fff;
   text-transform: uppercase;
+  margin-left: 10px;
+  padding-top: 65px;
+  text-shadow: -7px 10px 4px rgba(0,0,0,0.3);
+}
+.w_title p strong{
+
 }
 /* 왼쪽 흰색선 */
 .w_title .bar{
@@ -189,7 +186,8 @@
 }
 .ptitle{
   font-size: 28px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'SUIT-Bold', cursive;
+  text-transform: uppercase;
   color: rgb(245, 241, 241);
 }
 .ptext{
