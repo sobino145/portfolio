@@ -80,6 +80,7 @@
 .imgText li:first-child{display:block;}
 
 .imgText li strong{
+	font-family: 'SANGJUHaerye';
 	color:#111;
-	font-size:35px;
+	font-size:25px;
 }
