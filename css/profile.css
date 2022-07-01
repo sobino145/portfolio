@@ -134,6 +134,17 @@
   margin: auto;
   border: 3px solid #333;
 }
+.pp_ED ul li{
+  float: left;
+  width: 70px;
+  height: 55px;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
 .pp_HB{
   width: 350px;height: 90%;
   margin: auto;
