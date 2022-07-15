@@ -1,11 +1,11 @@
 $(document).ready(function(){
   
   /*///////////////// 메뉴 버튼 슬라이드  */
-  $("nav ul li a").click(function (e) {
-    $.scrollTo(this.hash || 0, 500);
+  $("nav ul li a").click(function(e){
+    $.scrollTo(this.hash || 0, 500); 
     //해시(#p1,p2...)가 있는 위치, 즉 클릭한 링크의 해시값이 있는 섹션으로 스크롤한다.
     e.preventDefault(); //링크의 원래 기능을 끔
-  });
+});
 
 
   ///////////////타이핑 작동
@@ -99,6 +99,7 @@ new TypeIt("#typing2", {
 
       $(".g_page span:nth-child(1)").text(g_pop+1);
       $(".pop>li").eq(g_pop).stop(true,true).fadeIn();
+      $("#popup").scrollTop(0);
 
     }
 
@@ -115,6 +116,8 @@ new TypeIt("#typing2", {
 
       $(".g_page span:nth-child(1)").text(g_pop+1);
       $(".pop>li").eq(g_pop).stop(true,true).fadeIn();
+      $("#popup").scrollTop(0);
+      
 
     }
 
@@ -154,6 +157,7 @@ new TypeIt("#typing2", {
 
       $(".g_page2 span:nth-child(1)").text(g_pop2+1);
       $(".pop2>li").eq(g_pop2).stop(true,true).fadeIn();
+      $("#popup2").scrollTop(0);
 
     }
 
@@ -170,6 +174,7 @@ new TypeIt("#typing2", {
 
       $(".g_page2 span:nth-child(1)").text(g_pop2+1);
       $(".pop2>li").eq(g_pop2).stop(true,true).fadeIn();
+      $("#popup2").scrollTop(0);
 
     }
 

@@ -142,13 +142,16 @@
 	z-index:10000;
 }
 .pop>li{
-	width:1000px;
+	width:1000px;height: auto;
+	min-height: 100%;
 	position:absolute;
 	text-align:center;
 	background:#fff;
 	display:none;
 }
 .pop>li p{
+	height: auto;
+	min-height: 100%;
 	text-align:center;
 	font-size:30px;
 }
@@ -177,6 +180,7 @@
 }
 .m_btn li i{color:#070707;}
 .m_btn li:hover i{color:#d5d5d5;}
+
 /*닫기버튼*/
 .m_btn .btn_close{
 	height:70px;
