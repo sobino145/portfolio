@@ -237,6 +237,7 @@ let gidx=0; //선택되는 이미지
   $(".thumbs li").click(function(){
     gidx=$(this).index();
     galleryImg(gidx);
+    $(".largeImg li").scrollTop(0);
   });
 
     //이전버튼 클릭시.....
@@ -246,6 +247,7 @@ let gidx=0; //선택되는 이미지
         gidx=6;
       }
       galleryImg(gidx);
+      $(".largeImg li").scrollTop(0);
     });
   
   
@@ -256,6 +258,7 @@ let gidx=0; //선택되는 이미지
         gidx=0;
       }
       galleryImg(gidx);
+      $(".largeImg li").scrollTop(0);
     });
 
 
