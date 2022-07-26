@@ -192,7 +192,7 @@
 }
 .ptext{
   font-size: 16px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'SUIT-Bold', sans-serif;
   color: #cff;
 }
 /* Detail 버튼 */
@@ -200,7 +200,7 @@
   display: inline-block;
   width: 150px;
   height: 28px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'SUIT-ExtraLight', sans-serif;
   font-weight: 700;
   line-height: 28px;
   text-align: center;
@@ -219,7 +219,7 @@
 .w_txt_slide ul li .btn{
   width: 150px;
   height: 28px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'SUIT-ExtraLight', sans-serif;
   font-weight: 700;
   line-height: 28px;
   text-align: center;
@@ -333,6 +333,7 @@
   background-color: #fff;
   z-index: 1000;
 }
+.w_pop>li>p>img{width:100%}
 /* 메뉴 뒤에 나오는 검정 배경 */
 .w_back{
   position: fixed;

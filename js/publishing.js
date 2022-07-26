@@ -47,7 +47,7 @@ $(document).ready(function () {
       overflowY: "hidden"
     }); //클릭한 숫자
     $(".w_pop>li").eq(w_pop).show(); //왼쪽 배경이미지 슬라이드
-    $("#w_popup").stop().fadeIn(); //왼쪽 설명텍스트 슬라이드
+    $("#w_popup").stop().fadeIn().scrollTop(0); //왼쪽 설명텍스트 슬라이드
 
     /*오른쪽 상단 버튼-다음보기*/
     $(".w_btn .w_right_btn").click(function () {
